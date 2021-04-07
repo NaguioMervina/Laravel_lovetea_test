@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel is the best Backend framework
                 </div>
 
                 <div class="links">
