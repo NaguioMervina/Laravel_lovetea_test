@@ -87,8 +87,8 @@
                 </div>
         
                 <a href="/error">Order Tracker</a>
-                {{--
-                <a href="{{ route('cart.index') }}">
+                
+                <a href="# {{--{{ route('cart.index') }}--}}">
         
                     @auth
                      {{Cart::session(auth()->id())->getContent()->count()}}
@@ -99,7 +99,7 @@
                     Cart
         
                 </a>
-                --}}
+                
                 <a href="/menu-user">Menu</a>
                 <a href="{{url('/')}}">Home</a>
                 

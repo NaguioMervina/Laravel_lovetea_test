@@ -224,23 +224,24 @@
                             <a href="#">Product <br>trace</a>
                         </div>
                     </div>
-                    {{--
+                    
                     <div class="categories-cart same-style">
                         <div class="same-style-icon">
-                            <a href="{{ route('cart.index') }}"><i class="pe-7s-cart"></i></a>
+                            <a href="{{-- {{ route('cart.index') }} --}}"><i class="pe-7s-cart"></i></a>
                         </div>
                         <div class="same-style-text">
-                            <a href="{{ route('cart.index') }}">My Cart <br>
-
+                            <a href="{{--{{ route('cart.index') }}--}}">My Cart <br>
+                    {{--
                                 @auth
                                 {{Cart::session(auth()->id())->getContent()->count()}}
                                 @else
                                 0
                                 @endauth
+                                --}}
 
                                 Item</a>
                         </div>
-                    </div>  --}}
+                    </div>  
                 </div>
                 {{--
                 <div class="mobile-menu-area electro-menu d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
@@ -262,7 +263,6 @@
         </div>
     </header>
     <!-- header end -->
-
 
     @if(session('message'))
 
