@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use TCG\Voyager\Facades\Voyager;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::redirect('/', '/home');
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')
 ->name('home');
@@ -51,7 +51,7 @@ Route::get('paypal/checkout-cancel', 'PayPalController@cancelPage')->name('paypa
 //changes made in the name "admin"
 Route::group(['prefix' => 'admin'], function () {
 
-  //  Voyager::routes();
+   Voyager::routes();
 
     Route::get('/order/pay/{suborder}', 'SubOrderController@pay')->name('order.pay');
 
